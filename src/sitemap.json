@@ -1,0 +1,12 @@
+{
+  "rules": [
+    {
+      "action": "allow",
+      "page": "pages/tab-index/index"
+    },
+    {
+      "action": "disallow",
+      "page": "*"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "vetur.format.defaultFormatter.scss": "prettier",
+  "vetur.format.defaultFormatter.css": "prettier",
+  "vetur.format.defaultFormatter.js": "prettier-eslint",
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "cSpell.words": [
+    "autoplay",
+    "miniclass",
+    "miniprogram",
+    "swiper",
+    "vant",
+    "VITE",
+    "Wechat"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "vetur.validation.templateProps": true,
+  "vetur.experimental.templateInterpolationService": true
+}

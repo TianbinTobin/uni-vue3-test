@@ -1,0 +1,54 @@
+{
+  "pages": [
+    {
+      "path": "pages/tab-index/index",
+      "style": {
+        "navigationBarTitleText": "Tian",
+        "navigationBarBackgroundColor": "#F0F2F5",
+        "enablePullDownRefresh": true
+      }
+    }
+  ],
+  "tabBar": {
+    "color": "#31343D",
+    "borderStyle": "white",
+    "selectedColor": "#31343D",
+    "list": [
+      {
+        "pagePath": "pages/tab-index/index",
+        "iconPath": "static/tabBar/tab_home.png",
+        "selectedIconPath": "static/tabBar/tab_home_active.png",
+        "text": "T"
+      },
+      {
+        "pagePath": "pages/tab-index/index",
+        "iconPath": "static/tabBar/tab_vip.png",
+        "selectedIconPath": "static/tabBar/tab_vip_active.png",
+        "text": "I"
+      },
+      {
+        "pagePath": "pages/tab-index/index",
+        "iconPath": "static/tabBar/tab_course.png",
+        "selectedIconPath": "static/tabBar/tab_course_active.png",
+        "text": "A"
+      },
+      {
+        "pagePath": "pages/tab-index/index",
+        "iconPath": "static/tabBar/tab_mine.png",
+        "selectedIconPath": "static/tabBar/tab_mine_active.png",
+        "text": "N"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "demo测试",
+    "navigationBarBackgroundColor": "#fff5de",
+    "backgroundColor": "#fff",
+    "usingComponents": {
+      "van-popup": "wxcomponents/vant/popup/index",
+      "van-sticky": "wxcomponents/vant/sticky/index",
+      "van-transition": "wxcomponents/vant/transition/index"
+    }
+  }
+}
