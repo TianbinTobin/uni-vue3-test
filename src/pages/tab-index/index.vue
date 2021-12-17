@@ -1,22 +1,22 @@
 <template>
   <view class="page_home">
     <view class="page_board">
-      <view class="search_board"></view>
-      <view class="adv_board"></view>
-      <view class="banner_board"></view>
-      <PopupTest />
+      <view class="search_board">111</view>
+      <view class="adv_board">222</view>
+      <view class="banner_board">333</view>
+      <PageContainerTest />
     </view>
   </view>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import PopupTest from './PopupTest.vue';
+import PageContainerTest from './PageContainerTest.vue';
 
 export default defineComponent({
   name: 'PageTabHome',
   components: {
-    PopupTest,
+    PageContainerTest,
   },
   setup() {
     return {};
