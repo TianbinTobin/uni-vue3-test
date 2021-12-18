@@ -1,5 +1,5 @@
 <template>
-  <van-popup :show="true" custom-style="background-color: unset;">
+  <van-popup :show="true" round custom-style="background-color: unset;">
     <template #default>
       <view class="dialog_vip">
         <view class="dialog_vip-body">

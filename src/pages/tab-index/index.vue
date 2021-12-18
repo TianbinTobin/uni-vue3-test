@@ -4,19 +4,19 @@
       <view class="search_board">111</view>
       <view class="adv_board">222</view>
       <view class="banner_board">333</view>
-      <PageContainerTest />
+      <PopupTest />
     </view>
   </view>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import PageContainerTest from './PageContainerTest.vue';
+import PopupTest from './PopupTest.vue';
 
 export default defineComponent({
   name: 'PageTabHome',
   components: {
-    PageContainerTest,
+    PopupTest,
   },
   setup() {
     return {};
