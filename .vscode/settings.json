@@ -4,13 +4,21 @@
   "vetur.format.defaultFormatter.js": "prettier-eslint",
   "typescript.tsdk": "node_modules\\typescript\\lib",
   "cSpell.words": [
+    "alipay",
+    "automator",
     "autoplay",
+    "browserslist",
+    "dcloudio",
+    "kuaishou",
     "miniclass",
     "miniprogram",
+    "quickapp",
     "swiper",
+    "toutiao",
     "vant",
     "VITE",
-    "Wechat"
+    "Wechat",
+    "weixin"
   ],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,

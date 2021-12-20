@@ -1,25 +1,48 @@
 <template>
   <view class="page_home">
     <view class="page_board">
-      <view class="search_board">111</view>
-      <view class="adv_board">222</view>
-      <view class="banner_board">333</view>
-      <PopupTest />
+      <SlotTest>
+        <div>1111</div>
+      </SlotTest>
+      <SlotNameTest>
+        <div>2222</div>
+      </SlotNameTest>
+      <SlotTest>
+        <template #default>
+          <div>3333</div>
+        </template>
+      </SlotTest>
+      <SlotNameTest>
+        <template #default>
+          <div>4444</div>
+        </template>
+      </SlotNameTest>
     </view>
   </view>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import PopupTest from './PopupTest.vue';
+import { defineComponent, ref } from 'vue';
+import SlotTest from './SlotTest.vue';
+import SlotNameTest from './SlotNameTest.vue';
 
 export default defineComponent({
   name: 'PageTabHome',
   components: {
-    PopupTest,
+    SlotTest,
+    SlotNameTest,
   },
   setup() {
-    return {};
+    const show = ref(true);
+
+    const onBeforeEnterFilter = () => {
+      console.log(1);
+    };
+
+    const onAfterLeaveFilter = () => {
+      console.log(2);
+    };
+    return { show, onBeforeEnterFilter, onAfterLeaveFilter };
   },
 });
 </script>
