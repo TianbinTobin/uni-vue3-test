@@ -7,7 +7,7 @@ export default defineComponent({
   name: 'App',
   onLaunch(options: any) {
     console.log('App Launch');
-    this.getQuery(options ? options.query : {});
+    // this.getQuery(options ? options.query : {});
     this.$store.dispatch('app/initialize');
   },
   onShow() {

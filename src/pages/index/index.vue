@@ -2,33 +2,37 @@
   <view class="page_home">
     <view class="page_board">
       <SlotTest>
-        <div>1111</div>
+        <div>test1</div>
       </SlotTest>
       <SlotNameTest>
-        <div>2222</div>
+        <div>test2</div>
       </SlotNameTest>
       <SlotTest>
         <template #default>
-          <div>3333</div>
+          <div>test3</div>
         </template>
       </SlotTest>
       <SlotNameTest>
         <template #default>
-          <div>4444</div>
+          <div>test4</div>
         </template>
       </SlotNameTest>
+      <div v-if="show"></div>
+      <McBottom v-else :loading="show" />
     </view>
   </view>
 </template>
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
+import McBottom from './McBottom.vue';
 import SlotTest from './SlotTest.vue';
 import SlotNameTest from './SlotNameTest.vue';
 
 export default defineComponent({
   name: 'PageTabHome',
   components: {
+    McBottom,
     SlotTest,
     SlotNameTest,
   },
